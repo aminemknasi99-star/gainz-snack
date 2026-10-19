@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GAINZ snack | البساتين، مكناس</title>
+<meta name="description" content="GAINZ snack: وجبات سريعة بنكهة القوة - البساتين، مكناس. اطلب الآن عبر الواتساب">
+<meta property="og:title" content="GAINZ snack | البساتين، مكناس">
+<meta property="og:description" content="تاكوس وبرجر وسندويشات ووجبات غنية بالبروتين. اطلب عبر الواتساب.">
+<meta property="og:type" content="website">
+<!-- أضف صورة: <meta property="og:image" content="https://موقعك/cover.jpg"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#151515;--surface:#202020;--line:#333;--text:#f4f4f4;--muted:#a9a9a9;--orange:#ff6a1a;--yellow:#ffc21a;--wa:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.7}
+a:focus-visible,button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+header{width:100%;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(21,21,21,.92);backdrop-filter:blur(10px);z-index:100;flex-wrap:wrap}
+.logo{font-weight:900;font-size:24px;color:var(--orange);display:flex;align-items:center;gap:8px;text-decoration:none}
+.logo span{color:var(--text)}
+nav{display:flex;gap:20px}
+nav a{color:var(--muted);text-decoration:none;font-weight:700;font-size:14px;transition:.3s}
+nav a:hover{color:var(--orange)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--text);font-size:22px;width:44px;height:44px;border-radius:10px;cursor:pointer}
+.hero{position:relative;padding:100px 20px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh}
+.hero-bg-text{position:absolute;font-size:15vw;font-weight:900;opacity:.03;z-index:1;user-select:none;color:var(--text)}
+.hero-content{position:relative;z-index:2;max-width:600px}
+.hero h1{font-size:48px;font-weight:900;line-height:1.3;margin-bottom:20px}
+.hero h1 span{color:var(--yellow)}
+.hero p{color:var(--muted);font-size:16px;margin-bottom:30px}
+.btn-whatsapp{display:inline-flex;align-items:center;gap:10px;background:var(--wa);color:#fff;padding:14px 28px;border-radius:50px;font-weight:700;text-decoration:none;box-shadow:0 4px 15px rgba(37,211,102,.3);transition:.3s}
+.btn-whatsapp:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(37,211,102,.5)}
+.location-badge{margin-top:20px;display:inline-block;border:1px solid var(--wa);color:var(--wa);padding:5px 15px;border-radius:20px;font-size:12px;font-weight:700}
+section.block{padding:70px 20px;max-width:1000px;margin:0 auto}
+section.block h2{font-size:32px;font-weight:900;margin-bottom:8px}
+section.block>p.sub{color:var(--muted);margin-bottom:32px}
+.menu-group{margin-bottom:36px}
+.menu-group h3{font-size:20px;color:var(--yellow);border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:6px}
+.item{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.item b{display:block;font-size:17px}
+.item small{color:var(--muted);font-size:13px}
+.item .price{color:var(--orange);font-weight:900;white-space:nowrap}
+.order{color:var(--wa);border:1px solid var(--wa);border-radius:20px;padding:4px 14px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.order:hover{background:var(--wa);color:#fff}
+.right{display:flex;align-items:center;gap:14px}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px;display:grid;gap:14px}
+.contact p{color:var(--muted)}
+.contact strong{color:var(--text)}
+.contact a.link{color:var(--yellow);font-weight:700}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 20px;border-top:1px solid var(--line)}
+@media(max-width:768px){
+.hero h1{font-size:32px}
+.burger{display:block}
+nav{display:none;width:100%;flex-direction:column;gap:0;padding-top:10px}
+nav.open{display:flex}
+nav a{padding:12px 0;border-top:1px solid var(--line);font-size:16px}
+.item{flex-direction:column;align-items:flex-start;gap:8px}
+.right{width:100%;justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">GAINZ snack <span>🥪</span></a>
+  <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav id="nav">
+    <a href="#top">الرئيسية</a>
+    <a href="#menu">القائمة</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-bg-text" aria-hidden="true">GAINZ</div>
+  <div class="hero-content">
+    <h1>اشحن طاقتك مع أشهى وجبات <span>GAINZ snack</span> في البساتين!</h1>
+    <p>تاكوس وبرجر وسندويشات مشبعة، ووجبات غنية بالبروتين لمن يتدرب بجدّ ويأكل بذكاء.</p>
+    <a href="#" class="btn-whatsapp wa-link" target="_blank" rel="noopener">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.324 5.328 0 11.859 0c3.166.001 6.143 1.233 8.38 3.472 2.238 2.24 3.466 5.219 3.464 8.387-.004 6.535-5.33 11.859-11.861 11.859-2.001-.001-3.971-.51-5.713-1.48L0 24zm6.75-2.885l.405.24c1.442.856 3.085 1.308 4.767 1.309 5.458 0 9.894-4.437 9.898-9.896.002-2.644-1.025-5.129-2.894-6.999C17.114 3.899 14.629 2.87 11.97 2.87c-5.462 0-9.902 4.44-9.904 9.899-.001 1.761.463 3.478 1.345 5.023l.263.46-1.01 3.693 3.784-.992z"/></svg>
+      اطلب الآن عبر الواتساب
+    </a>
+    <br>
+    <div class="location-badge">حي البساتين - مكناس</div>
+  </div>
+</section>
+
+<section class="block" id="menu">
+  <h2>قائمة الطعام</h2>
+  <p class="sub">اضغط «اطلب» على أي وجبة لتصلنا رسالتك جاهزة على الواتساب.</p>
+
+  <div class="menu-group">
+    <h3>تاكوس</h3>
+    <div class="item"><div><b>تاكوس دجاج</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="تاكوس دجاج" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+    <div class="item"><div><b>تاكوس لحم</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="تاكوس لحم" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>برجر</h3>
+    <div class="item"><div><b>برجر كلاسيك</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="برجر كلاسيك" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+    <div class="item"><div><b>برجر دجاج</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="برجر دجاج" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>سندويشات</h3>
+    <div class="item"><div><b>سندويش دجاج مشوي</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="سندويش دجاج مشوي" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+    <div class="item"><div><b>سندويش تونة</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="سندويش تونة" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+  </div>
+
+  <div class="menu-group">
+    <h3>وجبات البروتين</h3>
+    <div class="item"><div><b>طبق دجاج وأرز</b><small>وصف الوجبة هنا</small></div><div class="right"><span class="price">XX د.م</span><a class="order" data-item="طبق دجاج وأرز" href="#" target="_blank" rel="noopener">اطلب</a></div></div>
+  </div>
+</section>
+
+<section class="block" id="contact">
+  <h2>تواصل معنا</h2>
+  <p class="sub">أسرع طريقة للطلب هي الواتساب.</p>
+  <div class="contact">
+    <p><strong>العنوان:</strong> حي البساتين، مكناس</p>
+    <p><strong>ساعات العمل:</strong> من XX إلى XX كل يوم</p>
+    <p><strong>الهاتف:</strong> <a class="link" id="tel" href="#" dir="ltr">0600000000</a></p>
+    <p><a class="link" href="https://www.google.com/maps/search/?api=1&query=GAINZ+snack+Meknes" target="_blank" rel="noopener">افتح الموقع على الخريطة</a></p>
+    <a href="#" class="btn-whatsapp wa-link" target="_blank" rel="noopener" style="justify-self:start">اطلب عبر الواتساب</a>
+  </div>
+</section>
+
+<footer>© GAINZ snack - البساتين، مكناس</footer>
+
+<script>
+// غيّر الرقم هنا فقط: بالصيغة الدولية، بدون + أو أصفار (مثال: 212612345678)
+var PHONE = "212600000000";
+var local = "0" + PHONE.slice(3);
+function wa(msg){ return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg); }
+document.querySelectorAll(".wa-link").forEach(function(a){ a.href = wa("مرحبا، أريد أن أطلب من GAINZ snack"); });
+document.querySelectorAll(".order").forEach(function(a){ a.href = wa("مرحبا، أريد أن أطلب: " + a.dataset.item); });
+var tel = document.getElementById("tel"); tel.href = "tel:+" + PHONE; tel.textContent = local;
+var burger = document.getElementById("burger"), nav = document.getElementById("nav");
+burger.addEventListener("click", function(){
+  var open = nav.classList.toggle("open");
+  burger.setAttribute("aria-expanded", open);
+});
+nav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ nav.classList.remove("open"); burger.setAttribute("aria-expanded","false"); }); });
+</script>
+</body>
+</html>
